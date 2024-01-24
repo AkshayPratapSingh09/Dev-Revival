@@ -1,9 +1,12 @@
 # num = int(input("Enter the number:"))
 
-def fib(num):
-    if(num<=1):
+def fib(num, memo={}):
+    if num <= 1:
         return num
-    else:
-        return fib(num-1) + fib(num-2)
-    
+
+    if num not in memo:
+        memo[num] = fib(num - 1, memo) + fib(num - 2, memo)
+
+    return memo[num]
+
 print(fib(100))
