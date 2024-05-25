@@ -17,5 +17,6 @@ def solve(nums,output,index,ans):
 
 print(solve([],[],0,ans))
 print(ans)
+print(ans)
     
 
