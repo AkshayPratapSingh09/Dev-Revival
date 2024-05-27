@@ -33,7 +33,5 @@ def solve(nums,output,index,ans):
     solve(nums,output,index+1,ans)
 
 print(solve([],[],0,ans))
-print(ans)
-print(ans)
     
 
