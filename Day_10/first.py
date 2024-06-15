@@ -6,6 +6,6 @@ technologies   = ({
     'Duration':['30day','50days','55days','40days','60days','35day','','50days'],
     'Discount':[1000,2300,1000,1200,2500,1300,1400,1600]
           })
-# row_labels=['r0','r1','r2','r3','r4','r5','r6','r7']
-# df = pd.DataFrame(technologies, index=row_labels)
-# print(df)
+row_labels=['r0','r1','r2','r3','r4','r5','r6','r7']
+df = pd.DataFrame(technologies, index=row_labels)
+print(df)
