@@ -3,8 +3,8 @@
 # the array should be asc or desc
 
 # arr = [4,8,16,22,34,56,78]
-arr = [1,3,3,3,3,3,3,3,3,5]
-num = 3    #-> No. to find
+arr = [1,2,3,4,5,5,7,14,19,25]
+num = 29    #-> No. to find
 
 def find(num,arr):
 
@@ -32,3 +32,6 @@ def find(num,arr):
 
 
 print(find(num,arr))
+
+0 + 9 // 2 == 4
+4 + 9 // 2 == 6
