@@ -32,4 +32,4 @@ def solve(nums,output,index,ans):
     output.append(element)
     solve(nums,output,index+1,ans)
 
-print(solve([],[],0,ans))
+# print(solve([],[],0,ans))
