@@ -28,19 +28,26 @@ public class BinaryTree {
         // postOrder(a);
         // System.out.println(arr);
         // System.out.println(isBalancedTree(a));
-        System.out.println(finalFastBalancedTree(a));
-
+        // System.out.println(finalFastBalancedTree(a));
+        // List<TreeNode> r = new ArrayList<TreeNode>();
+        // int[] first = {3,5};
+        // HashMap<Integer, Boolean> third = new HashMap<>();
+        // for(int second : first){
+        //     third.put(second, true);
+        // }
+        // System.out.println(third.containsKey(e));
+        
+        levelOrder(a, height(a));
     }
-    static ArrayList arr = new ArrayList<>();
 
-    static void preOrder(TreeNode root) {
+    static void preOrder(TreeNode root, ArrayList arr) {
         if (root == null) {
             return;
         }
         System.out.println(root.data);
         arr.add(root.data);
-        preOrder(root.left);
-        preOrder(root.right);
+        preOrder(root.left, arr);
+        preOrder(root.right, arr);
     }
 
     static void postOrder(TreeNode root) {
@@ -61,25 +68,49 @@ public class BinaryTree {
         System.out.println(root.data);
         inOrder(root.right);
     }
-
-    static void CurrlevelOrder(TreeNode root, int level) {
+    // static ArrayList sol = new ArrayList<>();
+    static ArrayList CurrlevelOrder(TreeNode root, int level, ArrayList sol) {
+        
         if (root == null) {
-            return;
+            return sol;
         }
         if (level == 1) {
-            System.out.print(root.data + " ");
+            sol.add(root.data);
+            // System.out.print(root.data + " ");
         }
         if (level > 1) {
-            CurrlevelOrder(root.left, level - 1);
-            CurrlevelOrder(root.right, level - 1);
+            CurrlevelOrder(root.left, level - 1,sol);
+            CurrlevelOrder(root.right, level - 1,sol);
         }
+        return sol;
     }
+    // static void CurrlevelOrder(TreeNode root, int level) {
+    //     if (root == null) {
+    //         return;
+    //     }
+    //     if (level == 1) {
+    //         System.out.print(root.data + " ");
+    //     }
+    //     if (level > 1) {
+    //         CurrlevelOrder(root.left, level - 1);
+    //         CurrlevelOrder(root.right, level - 1);
+    //     }
+    // }
 
     static void levelOrder(TreeNode root, int height) {
-        for (int i = 0; i <= height; i++) {
-            CurrlevelOrder(root, i);
-            System.out.println();
+        List<ArrayList> res = new ArrayList<ArrayList>();
+        for (int i = 1; i <= height; i++) {
+            ArrayList sol = new ArrayList<>();
+            sol = CurrlevelOrder(root, i,sol);
+            // System.out.println(sol);
+            // System.out.println(sol.reversed()); 
+            if (i%2 == 0){  
+                Collections.reverse(sol);
+            }
+            res.add(sol);
+            // System.out.println();
         }
+        System.out.println(res);
     }
 
     static int heightTree(TreeNode root) {
@@ -211,6 +242,8 @@ public class BinaryTree {
             return false;
         }
     }
+
+    
 }
 
 
