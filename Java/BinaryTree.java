@@ -22,8 +22,8 @@ public class BinaryTree {
         // System.out.println(arr);
         // CurrlevelOrder(a, 3);
         
-        // TreeNode ans = FindLeastCommonAncestor(a, f, g);
-        // System.out.println(ans.data);
+        TreeNode ans = FindLeastCommonAncestor(a, f, g);
+        System.out.println(ans.data);
         // System.out.println(diameterOfTree(a));
         // postOrder(a);
         // System.out.println(arr);
@@ -37,7 +37,7 @@ public class BinaryTree {
         // }
         // System.out.println(third.containsKey(e));
         
-        levelOrder(a, height(a));
+        // levelOrder(a, height(a));
     }
 
     static void preOrder(TreeNode root, ArrayList arr) {
@@ -57,7 +57,7 @@ public class BinaryTree {
         postOrder(root.left);
         postOrder(root.right);
         System.out.println(root.data);
-        arr.add(root.data);
+        // arr.add(root.data);
     }
 
     static void inOrder(TreeNode root) {
@@ -158,9 +158,11 @@ public class BinaryTree {
             TreeNode left = FindLeastCommonAncestor(root.left, a, b);
             TreeNode right = FindLeastCommonAncestor(root.right, a, b);
 
-            if(left!=null && right != null) return root;
+            if(left == null) return right;
+            if(right == null) return left;
 
-            return left != null ? left : right;
+            return root;
+
 
     }
     
@@ -243,6 +245,44 @@ public class BinaryTree {
         }
     }
 
+    
+    public TreeNode dfs(TreeNode root, HashSet<Integer> to_delete, List<TreeNode> forest){
+        if(root == null){
+            return root;
+        }
+        root.left = dfs(root.left,to_delete,forest);
+        root.right = dfs(root.right,to_delete,forest);
+
+        if(!to_delete.contains(root.data)){
+            return root;
+        }
+
+        if(root.left!=null){
+            forest.add(root.left);
+        }
+        if(root.right!=null){
+            forest.add(root.right);
+        }
+
+        root.right = null;
+        root.left = null;
+        
+        return null;
+    }
+    
+    
+    public List<TreeNode> delNodes(TreeNode root, int[] to_delete) {
+        HashSet<Integer> set = new HashSet<>();
+        for (int to_del : to_delete){
+            set.add(to_del);
+        }
+        List<TreeNode> forest = new ArrayList<>();
+        root = dfs(root,set,forest);
+        if(root!=null){
+            forest.add(root);
+        }
+        return forest;
+    }
     
 }
 
