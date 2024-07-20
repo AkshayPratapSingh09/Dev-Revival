@@ -146,7 +146,7 @@ public class BinaryTree {
                     q.add(node.right);
                 }
             }
-            ans.add(level);
+            ans.add(level.reversed());
         }
         return ans;
     }
