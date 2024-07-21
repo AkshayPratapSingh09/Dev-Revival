@@ -181,7 +181,7 @@ public class BinaryTree {
         return 1 + Math.max(lh,rh);
     }
 
-    static Boolean isBalancedTree(TreeNode root){
+    // static Boolean isBalancedTree(TreeNode root){
         if(root==null) return true;
         return Math.abs(heightTree(root.left) - heightTree(root.right)) <=1 && isBalancedTree(root.left)
         && isBalancedTree(root.right);
