@@ -182,10 +182,10 @@ public class BinaryTree {
     }
 
     // static Boolean isBalancedTree(TreeNode root){
-        if(root==null) return true;
-        return Math.abs(heightTree(root.left) - heightTree(root.right)) <=1 && isBalancedTree(root.left)
-        && isBalancedTree(root.right);
-    }
+    //     if(root==null) return true;
+    //     return Math.abs(heightTree(root.left) - heightTree(root.right)) <=1 && isBalancedTree(root.left)
+    //     && isBalancedTree(root.right);
+    // }
     
     static ArrayList res = new ArrayList<>();
 
