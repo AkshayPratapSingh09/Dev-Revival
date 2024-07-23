@@ -4,26 +4,42 @@ public class BinaryTree {
     Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        TreeNode a = new TreeNode(10);
-        TreeNode b = new TreeNode(20);
-        TreeNode c = new TreeNode(30);
-        TreeNode d = new TreeNode(40);
-        TreeNode e = new TreeNode(50);
-        TreeNode f = new TreeNode(60);
-        TreeNode g = new TreeNode(70);
+        // TreeNode a = new TreeNode(10);
+        // TreeNode b = new TreeNode(20);
+        // TreeNode c = new TreeNode(30);
+        // TreeNode d = new TreeNode(40);
+        // TreeNode e = new TreeNode(50);
+        // TreeNode f = new TreeNode(60);
+        // TreeNode g = new TreeNode(70);
+        
+        // a.left = b;
+        // a.right = c;
+        // b.left = d;
+        // b.right = e;
+        // c.left = f;
+        // c.right = g;
+        
+        TreeNode a = new TreeNode(3);
+        TreeNode b = new TreeNode(9);
+        TreeNode c = new TreeNode(20);
+        TreeNode d = new TreeNode(15);
+        TreeNode e = new TreeNode(7);
 
         a.left = b;
         a.right = c;
-        b.left = d;
-        b.right = e;
-        c.left = f;
-        c.right = g;
+        c.left = d;
+        c.right = e;
+
+        List<List<Integer>> r = verticalTraversal(a);
+        System.out.println(r);
+
+
         // List<List<Integer>> arr =  betterlevelOrder(a);
         // System.out.println(arr);
         // CurrlevelOrder(a, 3);
         
-        TreeNode ans = FindLeastCommonAncestor(a, f, g);
-        System.out.println(ans.data);
+        // TreeNode ans = FindLeastCommonAncestor(a, f, g);
+        // System.out.println(ans.data);
         // System.out.println(diameterOfTree(a));
         // postOrder(a);
         // System.out.println(arr);
@@ -283,7 +299,51 @@ public class BinaryTree {
         }
         return forest;
     }
-    
+ 
+    static TreeMap<Integer, TreeMap<Integer, ArrayList<Integer>>> map = new TreeMap<>();
+
+    static List<List<Integer>> verticalTraversal(TreeNode root) {
+        List<List<Integer>> ans = new ArrayList<>();
+        dfs(root, 0, 0);
+
+        for(Map.Entry<Integer, TreeMap<Integer, ArrayList<Integer>>> entry : map.entrySet()){
+            
+            TreeMap<Integer, ArrayList<Integer>> level = entry.getValue();
+            ArrayList<Integer> list = new ArrayList<>();
+            System.out.println(level);
+
+            for(Map.Entry<Integer, ArrayList<Integer>> subEntry : level.entrySet()){
+                ArrayList<Integer> sublist = subEntry.getValue();
+                Collections.sort(sublist);
+                list.addAll(sublist);
+                
+            System.out.println(list);
+            }
+            ans.add(list);
+            System.out.println(ans);
+        }
+        return ans;
+        
+    }
+
+    public static void dfs(TreeNode root, int col, int level){
+        if (root == null){
+            return;
+        }
+
+        if(!map.containsKey(col)){
+            map.put(col, new TreeMap<>());
+        }
+
+        if(!map.get(col).containsKey(level)){
+            map.get(col).put(level, new ArrayList<>());
+        }
+        map.get(col).get(level).add(root.data);
+
+        dfs(root.left, col-1,level+1);
+        dfs(root.right, col+1,level+1);
+    }
+
 }
 
 
