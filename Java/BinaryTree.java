@@ -300,7 +300,7 @@ public class BinaryTree {
         return forest;
     }
  
-    static TreeMap<Integer, TreeMap<Integer, ArrayList<Integer>>> map = new TreeMap<>();
+    // static TreeMap<Integer, TreeMap<Integer, ArrayList<Integer>>> map = new TreeMap<>();
 
     static List<List<Integer>> verticalTraversal(TreeNode root) {
         List<List<Integer>> ans = new ArrayList<>();
