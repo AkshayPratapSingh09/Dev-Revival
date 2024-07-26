@@ -19,20 +19,26 @@ public class BinaryTree {
         // c.left = f;
         // c.right = g;
         
-        TreeNode a = new TreeNode(3);
-        TreeNode b = new TreeNode(9);
-        TreeNode c = new TreeNode(20);
-        TreeNode d = new TreeNode(15);
-        TreeNode e = new TreeNode(7);
+        TreeNode a = new TreeNode(1);
+        TreeNode b = new TreeNode(2);
+        TreeNode c = new TreeNode(7);
+        TreeNode d = new TreeNode(8);
+        TreeNode e = new TreeNode(9);
+        TreeNode f = new TreeNode(3);
+        TreeNode g = new TreeNode(10);
 
         a.left = b;
         a.right = c;
         c.left = d;
         c.right = e;
+        b.left = f;
+        f.left = g;
 
-        List<List<Integer>> r = verticalTraversal(a);
-        System.out.println(r);
+        // List<List<Integer>> r = verticalTraversal(a);
+        // System.out.println(r);
 
+        List<Integer> ans = rightSideView(a);
+        System.out.println(ans);
 
         // List<List<Integer>> arr =  betterlevelOrder(a);
         // System.out.println(arr);
@@ -300,7 +306,7 @@ public class BinaryTree {
         return forest;
     }
  
-    // static TreeMap<Integer, TreeMap<Integer, ArrayList<Integer>>> map = new TreeMap<>();
+    static TreeMap<Integer, TreeMap<Integer, ArrayList<Integer>>> map = new TreeMap<>();
 
     static List<List<Integer>> verticalTraversal(TreeNode root) {
         List<List<Integer>> ans = new ArrayList<>();
@@ -343,7 +349,37 @@ public class BinaryTree {
         dfs(root.left, col-1,level+1);
         dfs(root.right, col+1,level+1);
     }
+    
+    public static List<Integer> rightSideView(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
+ 
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+        int size = queue.size();
+        System.out.println("Size this time: "+size);
+         while (size>0){
+             TreeNode curr = queue.poll();
+             if (curr.left != null){
+                 queue.offer(curr.left);
+             }
+             if (curr.right != null){
+                 queue.offer(curr.right);
+             }
+             size--;
+             System.out.println("Size after deduc: "+size);
+             if(size==0){
+                 res.add(curr.data);
+                 System.out.println("Adding this time : "+curr.data);
+                 
+             }
+         }
+         }
+         return res;
+ }
 
+    
 }
 
 
