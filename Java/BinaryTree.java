@@ -37,14 +37,14 @@ public class BinaryTree {
         // List<List<Integer>> r = verticalTraversal(a);
         // System.out.println(r);
 
-        List<Integer> ans = rightSideView(a);
-        System.out.println(ans);
+        // List<Integer> ans = rightSideView(a);
+        // System.out.println(ans);
 
         // List<List<Integer>> arr =  betterlevelOrder(a);
         // System.out.println(arr);
         // CurrlevelOrder(a, 3);
         
-        // TreeNode ans = FindLeastCommonAncestor(a, f, g);
+        TreeNode ans = FindLeastCommonAncestor(a, f, g);
         // System.out.println(ans.data);
         // System.out.println(diameterOfTree(a));
         // postOrder(a);
@@ -58,7 +58,7 @@ public class BinaryTree {
         //     third.put(second, true);
         // }
         // System.out.println(third.containsKey(e));
-        
+        System.out.println(ans.data);
         // levelOrder(a, height(a));
     }
 
