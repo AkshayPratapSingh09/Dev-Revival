@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class BinaryTree {
-    Scanner sc = new Scanner(System.in);
+    // Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         // TreeNode a = new TreeNode(10);
@@ -379,6 +379,46 @@ public class BinaryTree {
          return res;
  }
 
+
+    public static TreeNode LCA(TreeNode root, TreeNode p,TreeNode q){
+        ArrayList<TreeNode> first = new ArrayList<>();
+        ArrayList<TreeNode> second = new ArrayList<>();
+
+        FindAnswer(root, p, first);
+        FindAnswer(root, q, second);
+
+        int i = 0;
+        int j = 0;
+
+
+        while (i<first.size() && j<second.size() && first.get(i).data == second.get(j).data) {
+            i++;
+            j++;
+        }
+
+
+        return first.get(i-1);
+    }
+ 
+ public static int FindAnswer(TreeNode root, TreeNode Search, ArrayList<TreeNode> temp){
+        if (root == null) return 0;
+
+        if (root == Search){
+            temp.add(root);
+            return 1;
+        }
+
+        temp.add(root);
+
+        int a1 = FindAnswer(root.left, Search, temp);
+        if (a1 == 1) return 1;
+        int a2 = FindAnswer(root.right, Search, temp);
+        if (a2 == 1) return 1;
+
+        temp.remove(temp.size() -1);
+        
+        return 0;
+    } 
     
 }
 
@@ -394,3 +434,7 @@ class TreeNode {
         this.right = null;
     }
 }
+
+
+
+
