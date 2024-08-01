@@ -3,7 +3,8 @@ import java.util.*;
 public class Subsets {
     public static void main(String[] args) {
         int[] nums = {1,2,3,4};
-        subsets(nums);
+        List<List<Integer>> res = subsets(nums);
+        System.out.println(res);
         
     }
 
@@ -25,7 +26,7 @@ public class Subsets {
                 // System.out.println("Temp after add: "+temp);
                 // res.contains(temp)
                 res.add(temp);
-                System.out.println("res after add: "+res);
+                // System.out.println("res after add: "+res);
             }
         }
 
