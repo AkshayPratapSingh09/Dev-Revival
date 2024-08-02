@@ -2,23 +2,37 @@ import java.util.*;
 
 public class PowerSet {
     public static void main(String[] args) {
-        String s = "abc";
+        String s = "101101";
         String curr = "";
-        System.out.println(pow(s, 0, curr));
+        int num = 100;
+        String.
+        List<String> combinations = new ArrayList<>();
+        pow(s, 0, curr,combinations);
+        System.out.println(combinations);
+        System.out.println(res);
     }
-
-    static List<String> pow(String s, int i, String curr){
+    static int res = 0;
+    static void pow(String s, int i, String curr,List<String> combinations){
         if (i == s.length()){
-            List<String> combinations = new ArrayList<>();
+            // if (count_1> (count_0 * count_0))
+            if (curr!="" && Integer.parseInt(curr)!=0 && countChar(curr, '1') > (countChar(curr, '0'))*(countChar(curr, '0'))) res +=1;
             combinations.add(curr);
-            return combinations;
+            return ;
         }
         
-        List<String> combinations = new ArrayList<>();
-        
-        combinations.addAll(pow(s, i+1,curr+s.charAt(i)));
-        combinations.addAll(pow(s, i+1,curr));
-        return combinations;
+        pow(s, i+1,curr+s.charAt(i),combinations);
+        pow(s, i+1,curr, combinations);
 
+    }
+
+    static int countChar(String str, char ch) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                count++;
+            }
+        }
+        return count;  
+    
     }
 }
