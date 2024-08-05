@@ -2,7 +2,7 @@ import java.util.*;
 
 public class n_Meeting_in_one_room {
     public static void main(String[] args) {
-
+// Wrong solution
 //         8
 // 75250 50074 43659 8931 11273 27545 50879 77924
 // 112960 114515 81825 93424 54316 35533 73383 160252
