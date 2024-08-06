@@ -1,6 +1,7 @@
 public class Sum_First_N_Number {
     public static void main(String[] args) {
-        System.out.println(sumNum(10, 1, 0));
+        // System.out.println(sumNum(10, 1, 0));
+        System.out.println(sumAltNum(10, 1));
 
     }
 
