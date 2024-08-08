@@ -19,20 +19,24 @@ public class BinaryTree {
         // c.left = f;
         // c.right = g;
         
-        TreeNode a = new TreeNode(1);
-        TreeNode b = new TreeNode(2);
-        TreeNode c = new TreeNode(7);
-        TreeNode d = new TreeNode(8);
-        TreeNode e = new TreeNode(9);
-        TreeNode f = new TreeNode(3);
-        TreeNode g = new TreeNode(10);
+//         10
+//         /    \
+//       20      30
+//     /   \ 
+//    10    10
+        TreeNode a = new TreeNode(10);
+        TreeNode b = new TreeNode(20);
+        TreeNode c = new TreeNode(30);
+        TreeNode d = new TreeNode(10);
+        TreeNode e = new TreeNode(10);
+        // TreeNode f = new TreeNode(3);
+        // TreeNode g = new TreeNode(10);
 
         a.left = b;
         a.right = c;
-        c.left = d;
-        c.right = e;
-        b.left = f;
-        f.left = g;
+        b.left = d;
+        b.right = e;
+        System.out.println(sumTree(a, 0));
 
         // List<List<Integer>> r = verticalTraversal(a);
         // System.out.println(r);
@@ -44,24 +48,31 @@ public class BinaryTree {
         // System.out.println(arr);
         // CurrlevelOrder(a, 3);
         
-        TreeNode ans = FindLeastCommonAncestor(a, f, g);
+        // TreeNode ans = FindLeastCommonAncestor(a, f, g);
+        // // System.out.println(ans.data);
+        // // System.out.println(diameterOfTree(a));
+        // // postOrder(a);
+        // // System.out.println(arr);
+        // // System.out.println(isBalancedTree(a));
+        // // System.out.println(finalFastBalancedTree(a));
+        // // List<TreeNode> r = new ArrayList<TreeNode>();
+        // // int[] first = {3,5};
+        // // HashMap<Integer, Boolean> third = new HashMap<>();
+        // // for(int second : first){
+        // //     third.put(second, true);
+        // // }
+        // // System.out.println(third.containsKey(e));
         // System.out.println(ans.data);
-        // System.out.println(diameterOfTree(a));
-        // postOrder(a);
-        // System.out.println(arr);
-        // System.out.println(isBalancedTree(a));
-        // System.out.println(finalFastBalancedTree(a));
-        // List<TreeNode> r = new ArrayList<TreeNode>();
-        // int[] first = {3,5};
-        // HashMap<Integer, Boolean> third = new HashMap<>();
-        // for(int second : first){
-        //     third.put(second, true);
-        // }
-        // System.out.println(third.containsKey(e));
-        System.out.println(ans.data);
         // levelOrder(a, height(a));
     }
 
+    static int sumTree(TreeNode root, int sum){
+        if (root == null){
+            return 0;
+        }
+        sum = root.data;
+        return sum + sumTree(root.left,sum)+sumTree(root.right, sum);
+    }
     static void preOrder(TreeNode root, ArrayList arr) {
         if (root == null) {
             return;
