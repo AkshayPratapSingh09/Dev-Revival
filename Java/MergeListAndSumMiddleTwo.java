@@ -2,6 +2,7 @@ import java.util.*;
 
 public class MergeListAndSumMiddleTwo {
     public static void main(String[] args) {
+            // List<List<Integer>> ans = new ArrayList<>();
         int[] arr1 = {1, 12, 15, 26, 38};
         int[] arr2 = {2, 13, 17, 30, 45};
         System.out.println(solve(arr1, arr2));
