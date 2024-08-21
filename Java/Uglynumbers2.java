@@ -6,7 +6,7 @@ public class Uglynumbers2 {
         while (count<n){
         if (i%2==0 || i%3==0 || i%5 ==0){
             count += 1;
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         }
         i++;
     }
