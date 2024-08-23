@@ -18,6 +18,6 @@ public class SplitEqualSum {
                 flag = true;
             }
         }
-        System.out.println(flag);
+        // System.out.println(flag);
     }
 }
