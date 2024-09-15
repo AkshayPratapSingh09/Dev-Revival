@@ -13,14 +13,13 @@ public class StringIteration {
             int firstCharIndex = firstChar - 'a';
             int lastCharIndex = lastChar - 'a';
 
-            // firstCharCounts[firstCharIndex]++;
-            // lastCharCounts[lastCharIndex]++;
+            firstCharCounts[firstCharIndex]++;
+            lastCharCounts[lastCharIndex]++;
         }
 
-        // Print the counts
-        // System.out.println("First character counts: " + Arrays.toString(firstCharCounts));
-        // System.out.println("Last character counts: " + Arrays.toString(lastCharCounts));
-        // boolean flag = false;
+        System.out.println("First character counts: " + Arrays.toString(firstCharCounts));
+        System.out.println("Last character counts: " + Arrays.toString(lastCharCounts));
+        boolean flag = false;
         if(firstCharCounts.length != lastCharCounts.length){
         System.err.println(0);
         } else{
