@@ -31,7 +31,7 @@ public class StringIteration {
                     flag=true;
                 }
             }
-            System.out.println(flag);
+            // System.out.println(flag);
 
         }
         // // Print the counts
