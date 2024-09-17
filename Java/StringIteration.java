@@ -31,22 +31,22 @@ public class StringIteration {
                     flag=true;
                 }
             }
-            // System.out.println(flag);
+            System.out.println(flag);
 
         }
-        // // Print the counts
-        // System.out.println("Character counts: " + Arrays.toString(charCounts));
-        // boolean flag = false;
-        // for(int i:charCounts){
-        //     if(i==1){
-        //         System.out.println("false");
-        //     }
-        //     if(i==2){
-        //         flag=true;
-        //     }
+        // Print the counts
+        System.out.println("Character counts: " + Arrays.toString(charCounts));
+        boolean flag = false;
+        for(int i:charCounts){
+            if(i==1){
+                System.out.println("false");
+            }
+            if(i==2){
+                flag=true;
+            }
 
-        // }
-        // return flag;
+        }
+        return flag;
     }
 }
 
