@@ -36,7 +36,7 @@ public class StringIteration {
         }
         // Print the counts
         System.out.println("Character counts: " + Arrays.toString(charCounts));
-        boolean flag = false;
+        // boolean flag = false;
         for(int i:charCounts){
             if(i==1){
                 System.out.println("false");
@@ -46,7 +46,7 @@ public class StringIteration {
             }
 
         }
-        return flag;
+        // return flag;
     }
 }
 
