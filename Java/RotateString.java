@@ -9,10 +9,10 @@ public class RotateString {
 
         for (int i=0;i<len;i++){
             if (test.charAt(i) == goal.charAt(0)){
-                // if (test.substring(i, i+len).equals(goal)){
-                //     System.out.println("true");
-                //     break;
-                // }
+                if (test.substring(i, i+len).equals(goal)){
+                    System.out.println("true");
+                    break;
+                }
             }
             System.out.println("This time : "+test.substring(i,i+len));
         }
