@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 public class HeapProblems {
     public static void main(String[] args) {
         
-        int arr[] = {8,3,10,4,11,2,7,6,14,1};
+        int arr[] = {8,3,10,4,11,2,7,6,14,1,10};
         int k = 3;
         System.out.print("k Smallest numbers are ");
         kSmallest(arr,k);
