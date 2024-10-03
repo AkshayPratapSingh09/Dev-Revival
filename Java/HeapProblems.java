@@ -11,9 +11,9 @@ public class HeapProblems {
         kSmallest(arr,k);
         System.out.print("k Largest numbers are ");
         kLargest(arr, k);
-        // System.out.print("kth Smallest numbers is "+kthSmallest(arr, k));
-        // System.err.println();
-        // System.out.print("kth Largest numbers is "+kthLargest(arr, k));
+        System.out.print("kth Smallest numbers is "+kthSmallest(arr, k));
+        System.err.println();
+        System.out.print("kth Largest numbers is "+kthLargest(arr, k));
 
     }
 
