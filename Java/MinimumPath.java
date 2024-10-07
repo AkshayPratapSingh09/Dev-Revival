@@ -7,7 +7,7 @@ public class MinimumPath {
     }
 
     static int helper(int grid[][], int row, int column, int columns, int rows) {
-        System.out.println("Traversing: " + row + " " + column);
+        // System.out.println("Traversing: " + row + " " + column);
 
         // Base case: if we are out of bounds, return a large value (effectively infinity)
         if (row >= rows || column >= columns) {
