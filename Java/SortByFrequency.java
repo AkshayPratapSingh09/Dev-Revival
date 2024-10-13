@@ -5,11 +5,11 @@ public class SortByFrequency {
         TreeMap<Integer,Integer> has = new TreeMap<>();
 
         for (int i : arr) {
-            if(!has.containsKey(i)){
-                has.put(i, 1);
-            } else {
-                has.put(i, has.get(i)+1);
-            }
+            // if(!has.containsKey(i)){
+            //     has.put(i, 1);
+            // } else {
+            //     has.put(i, has.get(i)+1);
+            // }
         }
         System.out.println(has);
     }
