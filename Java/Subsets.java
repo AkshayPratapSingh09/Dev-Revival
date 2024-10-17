@@ -21,12 +21,12 @@ public class Subsets {
             for (int i = 0; i < n; i++) {
                 // System.out.println("From res: "+res.get(i));
                 List<Integer> temp = new ArrayList(res.get(i));
-                // System.out.println("Temp here: "+temp);
+                System.out.println("Temp here: "+temp);
                 temp.add(num);
-                // System.out.println("Temp after add: "+temp);
+                System.out.println("Temp after add: "+temp);
                 res.contains(temp);
                 res.add(temp);
-                // System.out.println("res after add: "+res);
+                System.out.println("res after add: "+res);
             }
         }
 

@@ -1,0 +1,2 @@
+Sub-arrays OR Sub-pattern that Meets a certain criteria
+- Like (Max Subarray Sum)

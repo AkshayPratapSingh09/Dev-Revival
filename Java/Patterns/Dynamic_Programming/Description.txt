@@ -1,0 +1,4 @@
+Used for Solving Optimization Problems
+by breaking them into smaller Sub-Problems
+and storing their solutions to avoid 
+repetitive work

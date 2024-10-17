@@ -1,0 +1,3 @@
+In this type of problems you have to move 
+- Either the start and the end
+towards each other or opposite each other

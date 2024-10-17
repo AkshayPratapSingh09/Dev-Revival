@@ -1,0 +1,5 @@
+Sum Of Elements in a Sub Array
+
+Faster Way to solve Problems
+- Create Prefix Sum
+(Sum all of the past numbers in the array)

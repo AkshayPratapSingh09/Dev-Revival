@@ -1,0 +1,2 @@
+The tricky part is to not take extra space
+- we have to take here three variables(prev,curr,next)

@@ -1,0 +1,8 @@
+It is used to explore all paths and branch in a graph or tree
+
+-Steps
+
+-Choose A Starting Point
+- Keep track of the visited Nodes to Avoid Cycles
+- Perform the operation
+- Explore unvisited neighbours

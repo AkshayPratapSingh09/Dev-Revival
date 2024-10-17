@@ -1,0 +1,3 @@
+Variation of the standard Binary Search 
+- Used to solve the problem Where
+ (the array isnt perfectly sorted)

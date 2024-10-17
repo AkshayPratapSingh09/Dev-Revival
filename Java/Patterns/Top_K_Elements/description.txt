@@ -1,0 +1,2 @@
+uses Min/Max Heap for k smallest/Largest elements
+- Algo named QuickSelect is also there
