@@ -6,8 +6,8 @@ public class SplitEqualSum {
         int sumArr[]= new int[arr.length];
         int sum = 0;
         for (int i=0; i<arr.length; i++){
-            // sum += arr[i];
-            // sumArr[i] = sum;
+            sum += arr[i];
+            sumArr[i] = sum;
         }
         // System.out.println(Arrays.toString(sumArr));
         boolean flag = false;
