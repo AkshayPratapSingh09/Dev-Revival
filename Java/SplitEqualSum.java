@@ -14,7 +14,7 @@ public class SplitEqualSum {
     
         for (int i = 0; i < sumArr.length-1; i++) {
             if (sumArr[i] == (sumArr[sumArr.length-1] - sumArr[i])){
-                // System.out.println(arr[i]+ " " + arr[i+1]);
+                System.out.println(arr[i]+ " " + arr[i+1]);
                 flag = true;
             }
         }
