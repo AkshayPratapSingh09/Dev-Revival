@@ -13,8 +13,8 @@ public class lemonadeChange {
                 System.out.println("change is "+change);
                 change +=5;
             }else{
-                System.out.println("This one is not 5 "+bills[i]);
-                System.out.println("change is "+change);
+                // System.out.println("This one is not 5 "+bills[i]);
+                // System.out.println("change is "+change);
                 
                 int changeToReturn = bills[i]-5;
                 System.out.println("return to pay is "+changeToReturn);
