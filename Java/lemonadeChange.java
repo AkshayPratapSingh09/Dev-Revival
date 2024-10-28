@@ -7,7 +7,7 @@ public class lemonadeChange {
         // int[]  bills = {5,5,5,10,20};
         int[]  bills = {5,5,10,10,20};
         int change = 0;
-        // for(int i=0; i<bills.length; i++){
+        for(int i=0; i<bills.length; i++){
         //     if (bills[i] == 5){
         //         System.out.println("This one is 5");
         //         System.out.println("change is "+change);
@@ -23,7 +23,7 @@ public class lemonadeChange {
         //         }else{
         //             change -= changeToReturn;
         //             change += bills[i];
-        //         }
+                }
                  
         //     }
         // }
