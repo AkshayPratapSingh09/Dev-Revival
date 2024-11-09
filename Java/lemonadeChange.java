@@ -16,13 +16,13 @@ public class lemonadeChange {
         //         System.out.println("This one is not 5 "+bills[i]);
         // //         System.out.println("change is "+change);
                 
-        // //         int changeToReturn = bills[i]-5;x
-        // //         System.out.println("return to pay is "+changeToReturn);
-        // //         if (change < changeToReturn){
-        // //             System.out.println(false);
-        // //         }else{
-        // //             change -= changeToReturn;
-        // //             change += bills[i];
+        //         int changeToReturn = bills[i]-5;x
+        //         System.out.println("return to pay is "+changeToReturn);
+        //         if (change < changeToReturn){
+        //             System.out.println(false);
+        //         }else{
+        //             change -= changeToReturn;
+        //             change += bills[i];
         //         }
                  
         // //     }
