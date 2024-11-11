@@ -22,7 +22,7 @@ public class lemonadeChange {
         //             System.out.println(false);
         //         }else{
         //             change -= changeToReturn;
-        //             change += bills[i];
+                    change += bills[i];
         //         }
                  
         // //     }
