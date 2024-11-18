@@ -4,17 +4,29 @@ import java.util.*;
 public class Container_With_Most_Water {
     
     public static void main(String[] args) {
-        Set<int[][]> setOfArrays = new HashSet<>();
+        int nums[] = {1,8,6,2,5,4,8,3,7};
+        int ans = maxArea(nums);
+        System.out.println(ans);
         
-        int[][] array1 = {{1, 2}, {3, 4}};
-        int[][] array2 = {{5, 6}, {7, 8}};
-        int[][] array3 = {{1, 2}, {3, 4}}; // This has the same content as array1 but is a different reference.
+    }
+    public static int maxArea(int[] height) {
+        int maxWater = 0;
 
-        System.out.println(Arrays.toString(array3));
-        setOfArrays.add(array1);
-        setOfArrays.add(array2);
-        setOfArrays.add(array3); // This will be considered a different entry because array1 and array3 are different references.
+        int i=0;
+        int j= height.length-1;
 
-        System.out.println("Size of the set: " + setOfArrays.size()); // Output: 3
+        while(i<j){
+            int width = j-i;
+            int h = Math.min(height[i],height[j]);
+            int currWater = width * h;
+            maxWater = Math.max(maxWater,currWater);
+
+            if(h == height[i]){
+                i++;
+            } else{
+                j--;
+            }
+        }
+        return maxWater;
     }
 }
