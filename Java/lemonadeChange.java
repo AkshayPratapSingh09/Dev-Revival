@@ -18,12 +18,12 @@ public class lemonadeChange {
                 
                 int changeToReturn = bills[i]-5;x
                 System.out.println("return to pay is "+changeToReturn);
-                // if (change < changeToReturn){
-                //     System.out.println(false);
-                // }else{
-                //     change -= changeToReturn;
-                //     change += bills[i];
-                // }
+                if (change < changeToReturn){
+                    System.out.println(false);
+                }else{
+                    change -= changeToReturn;
+                    change += bills[i];
+                }
                  
             }
         }
