@@ -9,8 +9,8 @@ public class lemonadeChange {
         int change = 0;
         for(int i=0; i<bills.length; i++){
             if (bills[i] == 5){
-                System.out.println("This one is 5");
-                System.out.println("change is "+change);
+                // System.out.println("This one is 5");
+                // System.out.println("change is "+change);
                 change +=5;
             }else{
                 System.out.println("This one is not 5 "+bills[i]);
