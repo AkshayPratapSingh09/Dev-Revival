@@ -5,14 +5,14 @@ left = 0
 right = len(arr)-1
 
 i = 0
-# while i:
-    # if arr[i]
+while i:
+    if arr[i]
 
 print(arr[left])
 print(arr[right])
 
-# while i<len(arr)-1:
-#     if arr[i]<5 and arr[i]>3:
-#                 pass
-#     if 
+while i<len(arr)-1:
+    if arr[i]<5 and arr[i]>3:
+                pass
+    if 
 
