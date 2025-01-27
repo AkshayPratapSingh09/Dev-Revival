@@ -6,8 +6,9 @@ public class secondSmallestLargest {
     public static void main(String[] args) {
         int[] arr = {7,1,4,7,2,2,7,5};
         // String[] starr = {"0","0"};
-        String[] starr = {"5","5","3","6","7","10"};
-        int k = 5;
+        // String[] starr = {"5","5","3","6","7","10"};
+        int[] starr = {2, 3, 1, 20, 15};
+        int k = 4;
         // System.out.println(secondSmallest(arr,k));
         // System.out.println(kthLargest(starr,k));
         System.out.println(mostoptimalKthLargest(starr,k));
@@ -36,6 +37,7 @@ public class secondSmallestLargest {
 
         return ans;
     }
+    
     public static String kthLargest(String[] nums,int k){
         PriorityQueue<BigInteger> maxpq = new PriorityQueue<>();
         PriorityQueue<Integer> minpq = new PriorityQueue<>(Collections.reverseOrder());
@@ -70,16 +72,19 @@ public class secondSmallestLargest {
     }
 
 
-    public static String mostoptimalKthLargest(String[] nums,int k){
+    public static int mostoptimalKthLargest(int[] nums,int k){
         int N = nums.length;
 
-        PriorityQueue<BigInteger> pq = new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
     
         for(int i=0; i<N;i++){
-            pq.offer(new BigInteger(nums[i]));
-        }
 
-        BigInteger number = null;
+            pq.offer(nums[i]);
+
+        }
+        System.out.println(pq);
+
+        int number = 0;
         int limit= N-k+1;
 
         int i=0;
@@ -90,7 +95,7 @@ public class secondSmallestLargest {
             i++;
         }
 
-        return number.toString();
+        return number;
 
     }
 }
