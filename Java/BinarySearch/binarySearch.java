@@ -12,6 +12,8 @@ public class binarySearch {
 
         int i =0;
         int j = arr.length-1;
+        int k = arr.length-1;
+        int l = arr.length-1;
 
         while(i<=j){
             int mid =(i+j)/2;
@@ -23,7 +25,7 @@ public class binarySearch {
             }else if(target<arr[mid]){
                 j = mid-1;
             }
-            // System.out.println("working");
+            System.out.println("working");
         }
         return -1;
     }
