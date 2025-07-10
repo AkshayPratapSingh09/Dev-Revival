@@ -5,11 +5,11 @@ public class Sum_First_N_Number {
 
     }
 
-    // static int sumNum(int n,int k, int sum){
-    //     if (k == n) {
-    //         System.out.println("working");
-    //         return sum;
-    //     }
-    //         return sumNum(n, k+1, sum+k);        
-    // }
+    static int sumNum(int n,int k, int sum){
+        if (k == n) {
+            System.out.println("working");
+            return sum;
+        }
+            return sumNum(n, k+1, sum+k);        
+    }
 }
