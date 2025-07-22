@@ -7,15 +7,15 @@ public class revereseNums {
         System.out.println(Arrays.toString(nums));
     };
     
-    // static void reverse(int[] nums, int i, int n){
-    //     if (i>n/2){
-    //         return;
-    //     }
+    static void reverse(int[] nums, int i, int n){
+        if (i>n/2){
+            return;
+        }
         
-    //     int temp = nums[i];
-    //     nums[i] = nums[n-i-1];
-    //     nums[n-i-1] = temp;
+        int temp = nums[i];
+        nums[i] = nums[n-i-1];
+        nums[n-i-1] = temp;
 
-    //     reverse(nums, i+1, n);
-    // }
+        reverse(nums, i+1, n);
+    }
 }
