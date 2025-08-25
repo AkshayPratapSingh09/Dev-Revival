@@ -12,8 +12,8 @@ public class AllPermutations {
   {
     char ch[] = s.toCharArray();
     char p=ch[a];
-    // ch[a]=ch[b];
-    // ch[b]=p;
+    ch[a]=ch[b];
+    ch[b]=p;
     return String.valueOf(ch);
   }
     public static void permute(int index, String s,ArrayList<String> ans)
@@ -21,7 +21,7 @@ public class AllPermutations {
       // bASE
       if(index==s.length()-1)
       {
-        // System.out.println(s);
+        System.out.println(s);
         ans.add(s);
         return;
       }
