@@ -30,9 +30,9 @@ public class AllPermutations {
       for(int i=index;i<s.length();i++)
       {
         // swap
-        // System.out.println("Index this time :"+i);
-        // System.out.println("Before swapping :"+s);
-        // System.out.println("swapping "+s.charAt(i)+" and "+s.charAt(index));
+        System.out.println("Index this time :"+i);
+        System.out.println("Before swapping :"+s);
+        System.out.println("swapping "+s.charAt(i)+" and "+s.charAt(index));
         
         s=swap(s,i,index);
         // System.out.println("After swapping :"+s);
