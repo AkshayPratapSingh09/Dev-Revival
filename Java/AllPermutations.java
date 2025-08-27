@@ -35,9 +35,9 @@ public class AllPermutations {
         System.out.println("swapping "+s.charAt(i)+" and "+s.charAt(index));
         
         s=swap(s,i,index);
-        // System.out.println("After swapping :"+s);
+        System.out.println("After swapping :"+s);
         // recursion
-        // System.out.println("Entering Nested Permute");
+        System.out.println("Entering Nested Permute");
         permute(index+1,s, ans);
         // System.out.println("Exited Nested Permute");
         // backtrack
