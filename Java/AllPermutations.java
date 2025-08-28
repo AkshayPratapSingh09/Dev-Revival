@@ -39,10 +39,10 @@ public class AllPermutations {
         // recursion
         System.out.println("Entering Nested Permute");
         permute(index+1,s, ans);
-        // System.out.println("Exited Nested Permute");
+        System.out.println("Exited Nested Permute");
         // backtrack
         s=swap(s,i,index);
-        // System.out.println("After Back swapping :"+s);
+        System.out.println("After Back swapping :"+s);
       }
 
     }
