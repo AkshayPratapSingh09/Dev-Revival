@@ -3,7 +3,7 @@ def BinarySearch(num,arr):
     start = 0
     end = len(arr)-1
 
-    # mid  = (start + end)//2
+    mid  = (start + end)//2
 
     while (start <= end):
         print("Here",arr[start:end+1])
@@ -13,7 +13,7 @@ def BinarySearch(num,arr):
             return mid
 
         if (num> arr[mid]):
-            # start = mid + 1
+            start = mid + 1
         else:
             end = mid - 1
 
@@ -32,8 +32,8 @@ def PreOrderTraversal(root):
     if root==None:
         return
     print(root.data, end=' ')
-    # print(root.data, end=' ')
-    # print(root.data, end=' ')
+    print(root.data, end=' ')
+    print(root.data, end=' ')
     PreOrderTraversal(root.left)
     PreOrderTraversal(root.right)
 
