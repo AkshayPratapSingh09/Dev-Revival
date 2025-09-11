@@ -21,12 +21,12 @@ def BinarySearch(num,arr):
     
     return -1
 
-# def InOrderTraversal(root):
-#     if root==None:
-#         return
-#     InOrderTraversal(root.left)
-#     print(root.data,end=" ")
-#     InOrderTraversal(root.right)
+def InOrderTraversal(root):
+    if root==None:
+        return
+    InOrderTraversal(root.left)
+    print(root.data,end=" ")
+    InOrderTraversal(root.right)
 
 def PreOrderTraversal(root):
     if root==None:
