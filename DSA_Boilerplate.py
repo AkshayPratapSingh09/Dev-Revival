@@ -40,7 +40,7 @@ def PreOrderTraversal(root):
 def PostOrderTraversal(root):
     if root==None:
         return
-    # PostOrderTraversal(root.left)
-    # PostOrderTraversal(root.right)
+    PostOrderTraversal(root.left)
+    PostOrderTraversal(root.right)
     print(root.data,end=" ")
 
