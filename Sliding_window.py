@@ -14,4 +14,4 @@ print(arr[right])
 
 while i<len(arr)-1:
 if arr[i]<5 and arr[i]>3:
-    pass
+    # pass
