@@ -1,6 +1,6 @@
-string = "5*3/7-3"
+# string = "5*3/7-3"
 
-stack = []
+# stack = []
 
-for i in range(len(string)):
-    print(string[3])
+# for i in range(len(string)):
+#     print(string[3])
