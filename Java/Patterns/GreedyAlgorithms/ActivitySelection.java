@@ -22,7 +22,7 @@ public class ActivitySelection {
         pairs.add(temp);
         }
 
-        Collection.sort()
+        // Collection.sort()
 
 
         // in this questions we have the pairs of task which takes days (start[i],end[i])
