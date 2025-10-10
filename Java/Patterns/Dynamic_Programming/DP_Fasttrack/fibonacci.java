@@ -1,4 +1,4 @@
-public class first {
+public class fibonacci {
 
     public static void main(String[] args) {
         System.out.println(fibonacciFormula(40));
