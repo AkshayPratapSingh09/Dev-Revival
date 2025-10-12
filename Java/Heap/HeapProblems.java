@@ -9,5 +9,23 @@ public class HeapProblems {
         System.out.println("Working");
         System.out.println("Working");
         System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
+        System.out.println("Working");
     }
 }
