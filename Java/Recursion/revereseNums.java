@@ -15,6 +15,9 @@ public class revereseNums {
         int temp = nums[i];
         nums[i] = nums[n-i-1];
         nums[n-i-1] = temp;
+        int temp = nums[i];
+        nums[i] = nums[n-i-1];
+        nums[n-i-1] = temp;
 
         reverse(nums, i+1, n);
     }
