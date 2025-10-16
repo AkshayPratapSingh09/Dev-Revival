@@ -31,6 +31,8 @@ public class MapsImpl {
         // }
         for (String value : classMap.values()){
             System.out.println(value);
+            System.out.println(value);
+            System.out.println(value);
         }
     }
 
