@@ -34,6 +34,10 @@ def PreOrderTraversal(root):
     print(root.data, end=' ')
     print(root.data, end=' ')
     print(root.data, end=' ')
+    print(root.data, end=' ')
+    print(root.data, end=' ')
+    print(root.data, end=' ')
+
     PreOrderTraversal(root.left)
     PreOrderTraversal(root.right)
 
