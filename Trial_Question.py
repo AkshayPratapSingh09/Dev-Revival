@@ -4,3 +4,9 @@ stack = []
 
 for i in range(len(string)):
     print(string[3])
+    print(string[3])
+    print(string[3])
+    print(string[3])
+    print(string[3])
+    print(string[3])
+    print(string[3])
