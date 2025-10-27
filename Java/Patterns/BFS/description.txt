@@ -1,4 +1,4 @@
-Used to Explore Node level by level in a tree/Graph
+Used to Explore Node level by level in a Different Type of trees/Graphs
 
 Steps:
 
