@@ -9,6 +9,14 @@ public class Fibonacci {
         }
         int first = fib(n-1);
         int last = fib(n-2);
+
+        return first+last;
+
+        return first+last;
+        return first+last;
+        return first+last;
+        return first+last;
+        return first+last;
         return first+last;
     }
 }
