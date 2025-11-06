@@ -13,6 +13,12 @@ public class reverse {
             arr[i] = arr[n-1-i];
             arr[n-1-i] = temp;
         }
+for (int i = 0; i < arr.length/2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[n-1-i];
+            arr[n-1-i] = temp;
+        }
+
 
         System.out.println(Arrays.toString(arr));
     }
