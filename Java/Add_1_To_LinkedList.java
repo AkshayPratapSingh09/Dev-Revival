@@ -41,6 +41,7 @@ class LinkNode{
                 LinkNode par = head;
                 while (par.next != null){
                     par = par.next;
+			System.out.print(par.data+" ")
         }
         par.data +=1;
      return head;   
