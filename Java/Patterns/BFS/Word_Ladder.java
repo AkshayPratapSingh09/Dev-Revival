@@ -9,7 +9,7 @@ public class Word_Ladder {
     }
 
     public static Integer FindAns(){
-        return 1;
+        return 0;
     }
 }
 
