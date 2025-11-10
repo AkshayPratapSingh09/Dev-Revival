@@ -12,11 +12,5 @@ public class Fibonacci {
 
         return first+last;
 
-        return first+last;
-        return first+last;
-        return first+last;
-        return first+last;
-        return first+last;
-        return first+last;
     }
 }
