@@ -30,6 +30,7 @@ public class NQueen {
             }
             i++;
         }
+System.out.println("worked");
         return new String(s);
     
     }
