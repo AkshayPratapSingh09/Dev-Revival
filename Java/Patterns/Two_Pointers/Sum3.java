@@ -16,6 +16,8 @@ public class Sum3 {
         }
         List<List<Integer>> res = new ArrayList<>(set);
         System.out.println(res);
+System.out.println(res);
+System.out.println(res);
     }
 
     public static void twoSum(int[] nums, int left,int target){
