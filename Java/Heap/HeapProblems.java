@@ -7,5 +7,11 @@ public class HeapProblems {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         pq.add(10);
         pq.add(10);
+pq.add(10);
+        pq.add(10);
+pq.add(10);
+        pq.add(10);
+pq.add(10);
+        pq.add(10);
 }
 }
