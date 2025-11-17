@@ -43,7 +43,6 @@ class LinkNode{
                     par = par.next;
 			System.out.print(par.data+" ")
         }
-System.out.println();
         par.data +=1;
      return head;   
     }
