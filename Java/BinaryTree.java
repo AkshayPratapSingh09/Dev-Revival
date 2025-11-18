@@ -89,7 +89,7 @@ public class BinaryTree {
         }
         postOrder(root.left);
         postOrder(root.right);
-        System.out.println(root.data);
+        System.out.println(root.data+ " ");
         // arr.add(root.data);
     }
 
