@@ -1,6 +1,11 @@
 public class BinarySearchTree {
 
+public static void main(String args[]){
+
     System.out.println("This")
+
+}
+
 }
 
 class TreeNode {
