@@ -11,7 +11,7 @@ public class Combinations {
 
     static void combine(int index, int[] nums, List<Integer> curr, List<List<Integer>> ans, int k){
         if (curr.size() == k){
-        ans.add(new ArrayList(curr));
+       // ans.add(new ArrayList(curr));
         }
 
         for(int i = index; i < nums.length; i++){
