@@ -135,7 +135,6 @@ public class BinaryTree {
         for (int i = 1; i <= height; i++) {
             ArrayList sol = new ArrayList<>();
             sol = CurrlevelOrder(root, i,sol);
-            // System.out.println(sol);
             // System.out.println(sol.reversed()); 
             if (i%2 == 0){  
                 Collections.reverse(sol);
