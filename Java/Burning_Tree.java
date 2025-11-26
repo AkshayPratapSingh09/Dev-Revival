@@ -1,6 +1,5 @@
 /*
-*   @author
-*   Aakash Verma
+]
 *
 *   Output:
 *   2
