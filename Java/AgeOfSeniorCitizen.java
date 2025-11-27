@@ -10,7 +10,7 @@ public class AgeOfSeniorCitizen {
             if (Integer.parseInt(details[i].substring(11, 13))>60){
                 ans +=1;
                 System.out.println(details[i]);
-                System.out.println();
+
 
             }
         }
