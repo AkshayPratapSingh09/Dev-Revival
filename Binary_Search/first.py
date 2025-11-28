@@ -1,6 +1,6 @@
 # arr = [3,7,0,-2,5,9]
 
-# the array should be asc or desc
+# the array should be asc or desc order
 
 # arr = [4,8,16,22,34,56,78]
 arr = [1,2,3,4,5,5,7,14,19,25]
