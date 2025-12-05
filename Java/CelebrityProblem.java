@@ -51,7 +51,7 @@ public class CelebrityProblem {
             }
         }
 
-        // System.out.println(hash);
+        System.out.println(hash);
         for (int i : hash.keySet()) {
             System.out.println(i + " first = " + hash.get(i).first + " second = " + hash.get(i).second);
         }
