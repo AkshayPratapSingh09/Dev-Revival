@@ -98,7 +98,7 @@ public class BinaryTree {
             return;
         }
         inOrder(root.left);
-        System.out.println(root.data);
+        System.out.println(root.data+" ");
         inOrder(root.right);
     }
     // static ArrayList sol = new ArrayList<>();
