@@ -37,9 +37,9 @@ public class CelebrityProblem {
                 if (mat[i][j] == 1) {
                     if (!hash.containsKey(j)) {
                         hash.put(j, new Pair<Integer, Integer>(1, 0));
-                        ans = j;
+                        //ans = j;
                     } else {
-                        hash.get(j).first += 1;    
+                       // hash.get(j).first += 1;    
                     }
                     
                     if (!hash.containsKey(i)) {
