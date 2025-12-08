@@ -5,7 +5,7 @@ public class AllPermutations {
         String s="ABC";
         ArrayList<String> ans = new ArrayList<>();
         permute(0,s, ans);
-        System.out.println(ans);
+        //System.out.println(ans);
     }
 
     public static String swap(String s,int a,int b)
