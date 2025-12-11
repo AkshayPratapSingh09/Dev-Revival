@@ -57,7 +57,7 @@ public class Burning_Tree {
             if(root.right != null) {
                 queue.offer(root.right);
             }
-            System.out.println(root.data);
+         //   System.out.println(root.data);
             return 1;
         }
 
