@@ -11,7 +11,7 @@ public static void main(String[] args) {
  ArrayList<Integer> Traversal(TreeNode root, ArrayList<Integer> ans){
     if(root.left == null && root.right==null){
         ans.add(root.data);
-        return ans;
+      //  return ans;
     }
     return ans;
 }
