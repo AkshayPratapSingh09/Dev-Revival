@@ -6,7 +6,7 @@ public class Combinations {
         int k = 2;
         List<List<Integer>> ans = new ArrayList<>();
         combine(0, arr, new ArrayList(), ans,k);
-       // System.out.println(ans);
+       System.out.println(ans);
     }
 
     static void combine(int index, i0nt[] nums, List<Integer> curr, List<List<Integer>> ans, int k){
