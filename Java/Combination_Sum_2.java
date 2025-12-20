@@ -20,10 +20,10 @@ public class Combination_Sum_2 {
     static List<List<Integer>> subsets(int[] nums,int target){
         List<List<Integer>> res = new ArrayList<>();
         res.add(new ArrayList<>());
-        // System.out.println(res);
+         System.out.println(res);
 
         for (int num:nums) {
-            // System.out.println("Num : "+num);
+            System.out.println("Num : "+num);
             // System.out.println("Size this time: "+n);
             int n = res.size();
 
