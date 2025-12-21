@@ -8,9 +8,9 @@ public class CelebrityProblem {
         // { 0, 1, 0 }
         // };
 
-        // int mat[][] = { 
-        //     { 1, 1 },
-        //     { 0, 0 } };
+        int mat[][] = { 
+             { 1, 1 },
+             { 0, 0 } };
 
         int mat[][] = { 
             {0, 0, 0, 1, 0},
