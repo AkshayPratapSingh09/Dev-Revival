@@ -36,7 +36,7 @@ public class BinaryTree {
         a.right = c;
         b.left = d;
         b.right = e;
-        System.out.println(sumTree(a, 0));
+       // System.out.println(sumTree(a, 0));
 
         // List<List<Integer>> r = verticalTraversal(a);
         // System.out.println(r);
