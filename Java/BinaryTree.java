@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class BinaryTree {
-    // Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         // TreeNode a = new TreeNode(10);
