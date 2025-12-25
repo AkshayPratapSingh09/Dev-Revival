@@ -4,8 +4,8 @@ public class BinaryTree {
     Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // TreeNode a = new TreeNode(10);
-        // TreeNode b = new TreeNode(20);
+         TreeNode a = new TreeNode(10);
+         TreeNode b = new TreeNode(20);
         // TreeNode c = new TreeNode(30);
         // TreeNode d = new TreeNode(40);
         // TreeNode e = new TreeNode(50);
