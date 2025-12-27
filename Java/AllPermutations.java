@@ -21,7 +21,7 @@ public class AllPermutations {
       // bASE
       if(index==s.length()-1)
       {
-        System.out.println(s);
+       // System.out.println(s);
         ans.add(s);
         return;
       }
