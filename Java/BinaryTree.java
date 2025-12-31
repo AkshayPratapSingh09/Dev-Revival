@@ -38,8 +38,8 @@ public class BinaryTree {
         b.right = e;
        System.out.println(sumTree(a, 0));
 
-        // List<List<Integer>> r = verticalTraversal(a);
-        // System.out.println(r);
+        List<List<Integer>> r = verticalTraversal(a);
+        System.out.println(r);
 
         // List<Integer> ans = rightSideView(a);
         // System.out.println(ans);
