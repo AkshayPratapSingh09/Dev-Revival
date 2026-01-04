@@ -14,7 +14,7 @@ public class AllPermutations {
     char p=ch[a];
     ch[a]=ch[b];
     ch[b]=p;
-    return String.valueOf(ch);
+    //return String.valueOf(ch);
   }
     public static void permute(int index, String s,ArrayList<String> ans)
     {
