@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; Map "code" / "code.exe" to Antigravity for the current user (HKCU)
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\code.exe]
+@="C:\\Users\\Ap\\AppData\\Local\\Programs\\Antigravity\\bin\\antigravity"
+"Path"="C:\\Users\\Ap\\AppData\\Local\\Programs\\Antigravity\\bin\\"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\code]
+@="C:\\Users\\Ap\\AppData\\Local\\Programs\\Antigravity\\bin\\antigravity"
+"Path"="C:\\Users\\Ap\\AppData\\Local\\Programs\\Antigravity\\bin\\"

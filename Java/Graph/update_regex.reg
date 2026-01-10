@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; Make "code" resolve to your wrapper that forwards args properly
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\code.exe]
+@="C:\\Users\\Ap\\bin\\code.cmd"
+"Path"="C:\\Users\\Ap\\bin\\"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\code]
+@="C:\\Users\\Ap\\bin\\code.cmd"
+"Path"="C:\\Users\\Ap\\bin\\"
